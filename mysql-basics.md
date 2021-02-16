@@ -17,11 +17,13 @@
     PATH=$MYSQL_HOME/bin:$PATH
     export PATH
     ```
+<br>
 
 ## Start and shutdown the MySQL server
 In MacOS, open the *System Preferences* panel and find the *MySQL* at the bottom. You can start and shutdown MySQL server in the management panel.
 
-<img src="images/MySQL-manage-MacOS.png" width="200" />
+<img src="images/MySQL-manage-MacOS.png" width="600" />
+<br>
 
 ## Connect to MySQL
 In command line:
@@ -46,47 +48,48 @@ After login successfully, you will enter the MySQL interactive shell. Can type `
 ```shell
 mysql> quit;
 ```
+<br>
 
 ## Basic CLI Commands
 All the commands are case insensitive in MacOS system.
 
-### List all the databases
+#### List all the databases
 ```shell
 mysql> show databases;
 ```
 
-### Create Database
+#### Create Database
 ```shell
 mysql> create database if not exists [db_name];
 ```
 
-### Enter / Use a database
+#### Enter / Use a database
 ```shell
 mysql> use [db_name]
 ```
 
-### List Tables
+#### List Tables
 ```shell
 mysql> show tables;
 ```
 
-### Show Table Schema Definition
+#### Show Table Schema Definition
 ```shell
 mysql> describe [db_name]
 ```
 
-### Delete Table
+#### Delete Table
 ```shell
 mysql> drop table if exists [db_name];
 ```
 
-### Insert Data into Database
+#### Insert Data into Database
 ```shell
 mysql> insert into [db_name]
        values('kyle', 1, 'snoopy', NULL);
 ```
 
-### Retrieve Information
+#### Retrieve Information
 Detailed tutorials about retrieving data here: https://dev.mysql.com/doc/refman/8.0/en/retrieving-data.html
 
 
